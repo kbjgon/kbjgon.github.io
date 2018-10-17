@@ -12,10 +12,13 @@
 	width:100%;
 	margin:0 auto;
 }
-.wrap .headerwrap{
+.headerwrap{
+	position:fixed;
+	top:0;
+	left:0;
 	width:100%;
 	height:90px;
-	background:rgba(0,0,0,.9);
+	background:rgba(0,0,0,.8);
 }
 .header{
 	width:1098px;
@@ -51,27 +54,37 @@
 }
 .header .nav li a{
 	float:left;
+	font-size:17px;
 	margin-left:25px;
 	padding-top:8px;
 	text-align:left;
 	color:white;
 }
 /*상단 - UI 영역*/
-.visual{
+.visualwrap{
 	width:100%;
 	height:350px;
-	background:red;
+	background-image:url("../images/visual.png");
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:cover;
 }
-.visual img{
-	width:100%;
-	height:350px;
+.visual{
+	position:relative;
+	width:1098px;
+	height:100%;
+	margin:0 auto;
 }
 .visual p{
-	text-align:left;
-	font-size:20px;
-	padding-top:13px;
-	margin-left:28px;
+	position:absolute;
+	bottom:85px;
+	left:27px;
 	color:#101e3c;
+	font-size:30px;
+	font-family:"Myriad Pro";
+	font-weight:bold;
+	text-align:center;
+
 }
 /*레이아웃 - 중간 영역*/
 .submain{
@@ -111,6 +124,9 @@
 }
 .sidemenu li.on a{
 	background:#5380da;
+	background-image:url("../images/bul_right.png");
+	background-repeat:no-repeat;
+	background-position:95% 50%;
 	color:#fff;
 }
 .section{

@@ -1,14 +1,14 @@
 *{
-    margin:0;
-    padding:0;
-    border:0;
-    font-family:'맑은 고딕';
-    font-size:13px;
-    list-style:none;
-    box-sizing:border-box;
+	margin:0;
+	padding:0;
+	border:0;
+	font-family:'맑은 고딕';
+	font-size:13px;
+	list-style:none;
+	box-sizing:border-box;
 }
 .wrap{
-    width:100%;
+	width:100%;
 	margin:0 auto;
 }
 .header{

@@ -111,17 +111,73 @@
 	background:#fff;
 }
 /* 중단 - UI 영역 */
-.images p{
-	float:left;
+.quickmenu{
+	display:table;
+	width:100%;
+}
+.quickmenu::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.quickmenu p{
+	display:table-cell;
+	width:25%;
+	height:230px;
+	border-left:1px solid #ddd;
 	font-size:14px;
 	text-align:center;
-	width:36px;
-	height:37px;
-	margin-top:86px;
-	margin-left:150px;
+	vertical-align:middle;
 }
-.images p img{
+.quickmenu span{
+	display:block;
+	margin:10px 0 0;
+}
+.article{
+	display:table;
+	width:100%;
+}
+.atricle::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.atricle a{
+	display:table-cell;
+	width:25%;
+	height:230px;
 	border-left:1px solid #ddd;
+	font-size:11px;
+}
+.notice h2{
+	position:relative;
+	top:7px;
+	left:39px;
+}
+.notice a{
+	position:relative;
+	bottom:12px;
+    left:190px;
+}
+.qna h2{
+	position:relative;
+	bottom:30px;
+	left:318px;
+}
+.qna a{
+	position:relative;
+	bottom:52px;
+	left:490px;
+}
+.gallery h2{
+	position:relative;
+	bottom:64px;
+    left:590px;
+}
+.gallery a{
+	position:relative;
+	bottom:84px;
+    left:979px;
 }
 /* 레이아웃 - 하단 영역 */
 .footerwrap{

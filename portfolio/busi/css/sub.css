@@ -195,10 +195,12 @@
 	color:#999;
 }
 .papago{
-	width:1115px;
-	height:125px;
+	display:table-cell;
+	width:26%;
+	height:129px;
 	margin:0 auto;
 	background:#222;
+	border:1px solid #ddd;
 }
 .papago p{
 	width:497px;

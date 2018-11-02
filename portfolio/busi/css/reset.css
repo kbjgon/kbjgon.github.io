@@ -109,7 +109,9 @@
 	height:126px;
 	margin:0 auto;
 	background:#222;
-	border:1px solid #ddd;
+    border:1px solid #ddd;
+    border-left-width:0;
+    border-bottom-width:0;
 }
 .py p{
 	width:492px;

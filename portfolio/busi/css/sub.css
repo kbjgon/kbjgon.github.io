@@ -65,12 +65,13 @@
 .sidemenu li.on a{
 	font-size:14px;
 	font-family:'Malgun Gothic';
-	background-repeat:no-repeat;
-	background-position:95% 50%;
 }
 .sidemenu li a:hover{
-	background:gold;
-	color:rgb(82,127,218);
+	background:rgba(0,141,98,0.5);
+	background-image:url("../images/bul_right.png");
+	background-repeat:no-repeat;
+	background-position:95% 50%;
+	color:rgb(255,0,255);
 }
 .section{
 	position:relative;

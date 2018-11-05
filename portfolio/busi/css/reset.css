@@ -64,6 +64,9 @@
 	text-align:left;
 	color:#fff;
 }
+.header > div a nav:hover{
+	text-decoration:underline;
+}
 /* 레이아웃 - 하단 영역 */
 .footerwrap{
 	width:100%;

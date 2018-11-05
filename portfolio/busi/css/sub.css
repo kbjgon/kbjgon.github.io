@@ -104,6 +104,14 @@
 .NEXONRP img{
 	padding-top:15px;
 }
+.NPT p{
+	width:718px;
+	height:240px;
+	overflow-y:scroll;
+	border:1px solid #ccc;
+	padding:12px;
+	line-height:16px;
+}
 /* 중단 - UI 영역 */
 .location{
 	position:absolute;

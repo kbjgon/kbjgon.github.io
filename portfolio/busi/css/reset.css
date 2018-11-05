@@ -27,6 +27,7 @@
 	height:90px;
 	margin:0 auto;
 }
+
 .header h1{
 	display:inline-block;
 	width:94px;
@@ -47,6 +48,9 @@
 	font-size:12px;
 	font-family:'Malgun Gothic';
 	color:#fff;
+}
+.header > div li a:hover{
+	text-decoration:underline;
 }
 .header .nav{
 	float:right;

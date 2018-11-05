@@ -134,8 +134,8 @@
 	font-family:'Dotum';
 	color:#666;
 }
-.article .notice{
-	
+.article > div .btn-more:hover{
+	text-decoration:underline;
 }
 .article .notice h2{
 	

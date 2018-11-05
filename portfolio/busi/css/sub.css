@@ -67,7 +67,7 @@
 	font-family:'Malgun Gothic';
 }
 .sidemenu li a:hover{
-	background:rgba(255,0,0);
+	background:rgba(255,0,0,0.8);
 	background-image:url("../images/bul_right.png");
 	background-repeat:no-repeat;
 	background-position:95% 50%;

@@ -49,9 +49,6 @@
 	font-family:'Malgun Gothic';
 	color:#fff;
 }
-.header > div li a:hover{
-	text-decoration:underline;
-}
 .header .nav{
 	float:right;
 	display:inline-block;

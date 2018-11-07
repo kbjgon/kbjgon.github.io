@@ -61,17 +61,15 @@
 	font-size:14px;
 	text-decoration:none;
 }
-
-.sidemenu li.on a{
-	font-size:14px;
-	font-family:'Malgun Gothic';
-}
+.sidemenu li.on a,
 .sidemenu li a:hover{
 	background:rgba(255,0,0,0.8);
 	background-image:url("../images/bul_right.png");
 	background-repeat:no-repeat;
 	background-position:95% 50%;
 	color:rgb(255,255,255);
+	font-size:14px;
+	font-family:'Malgun Gothic';
 }
 .section{
 	position:relative;
@@ -102,10 +100,10 @@
 	margin-top:10px;
 	font-size:15px;
 }
-.NEXONRP img{
+.nexonrp img{
 	padding-top:15px;
 }
-.NPT p{
+.npt p{
 	width:718px;
 	height:240px;
 	overflow-y:scroll;

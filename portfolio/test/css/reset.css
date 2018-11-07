@@ -73,9 +73,7 @@
 	color:inherit;
 	font-family:inherit;
 }
-.nav ul > li > a:hover{
-	background:rgba(255,0,0,0.8);
-}
+
 /* 상단 매뉴 영역 */
 /* .nav .dep2{
 	overflow:hidden;

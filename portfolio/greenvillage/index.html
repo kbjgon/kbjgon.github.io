@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>greenvillage</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/common/uxDetect.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="headerwrap">
+			<header class="header">
+				<h1 class="logo">
+					<a href="#"><img src="images/h1_logo.gif" alt="logo"></a>
+				</h1>
+				<ul class="tnb">
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">마이페이지</a></li>
+					<li><a href="#">장바구니</a></li>
+					<li><a href="#">주문&#47;배송</a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+				<div class="bn">
+					<img src="images/20181602032416i51.jpg" alt="김장김치예약판매">
+				</div>
+				<div class="qs">
+					<input type="text" name="">
+					<a href="#"><img src="images/btn_search.gif" alt="검색"></a>
+				</div>
+			</header>
+			<!-- //.해더 영역 -->
+			<nav class="nav">
+				<ul>
+					<div class="sm">
+						<a href="#"><img src="images/btn_category.gif" alt="쇼핑물전체보기"></a>
+					</div>
+					<!-- //.sm -->
+					<li><a href="#" style="color:rgba(170,201,37)">on Sale</a></li>
+					<li><a href="#">쇼핑보드</a></li>
+					<li><a href="#">초록이야기</a></li>
+					<li><a href="#">품질관리센터</a></li>
+					<li><a href="#">매장안내</a></li>
+					<li><a href="#">매장배송</a></li>
+				</ul>
+			</nav>
+			<!-- //.네비 영역 -->
+		</div>
+		<!-- //.해더 전체 감싸은 영역 -->
+		<div class="sectionwrap">
+			<div class="container">
+				<section class="visual">
+					<img src="images/20172213052422i24.jpg" alt="신선쌀" class="img_big">
+					<img src="images/20183306032433i13.jpg" alt="초록" class="img_small">
+					<img src="images/2018030203243i09.jpg" alt="180일정성더한우리콩국간장" class="img_small">
+				</section>
+				<!-- //.visual 영역 -->
+				<section class="vbanner">
+					<img src="images/20185425092454i09.jpg" alt="유기농절임배추 10kg">
+				</section>
+				<!-- //.vbanner 영역 -->
+				<section class="product">
+					<div class="npt">
+						
+					</div>
+					<!-- //.npt 영역 -->
+					<div class="ppi">
+
+					</div>
+					<!-- //.ppi 영역 -->
+					<div class="rep">
+
+					</div>
+					<!-- //.rep 영역 -->
+				</section>
+				<!-- //.product 영역 -->
+				<section class="best">
+					<div>
+						<div class="br">
+							<div>
+
+							</div>
+						</div>
+						<!-- //.br 영역 -->
+						<div class="sale">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<!-- //.sale 영역 -->
+					</div>
+					<!-- //.banner 영역-->
+					<div class="bpd">
+
+					</div>
+					<!-- //.bpd 영역  -->
+				</section>
+				<!-- //.best 영역 -->
+				<section class="gnews">
+					<div></div>
+					<div></div>
+				</section>
+				<section class="shop">
+					<div></div>
+					<div></div>
+				</section>
+				<section class="quick">
+					<div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</section>
+				<section class="bninfo">
+					<div></div>
+					<div></div>
+				</section>
+				<section class="crape">
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+				</section>
+			</div>
+			<!-- //.container -->
+		</div>
+		<!-- //.섹션 전체 감싸은 영역 -->
+		<div class="footerwrap">
+
+		</div>
+		<!-- //. 푸더 전체감싸은 영역 -->
+	</div>
+	<!-- //.전체감싸은 영역 -->
+	<script>
+		$(function() {
+			var $doc = $(document);
+			var $win = $(window);
+			var $nav = $('.nav');
+			var navOffTop = $nav.offset().top;
+			var isFixed = false;
+
+			function menu() {
+				if ( $win.scrollTop() >= navOffTop ) {
+					if ( !isFixed ) {
+						isFixed = true;
+						$nav.addClass('affix');
+					}
+				} else if ( isFixed ) {
+					isFixed = false;
+					$nav.removeClass('affix');
+				}
+			}
+
+			$win.on('scroll', menu);
+			menu();
+
+			$nav.on('click', 'a[href^="#"]', function(e) {
+				e.preventDefault();
+				var hash = this.hash;
+				var offset = $(hash).offset().top;
+				$('body, html').animate({
+					scrollTop: offset
+				}, 600, 'easeInOutQuart', function() {
+					document.location.hash = hash;
+				});
+			});
+
+		});
+	</script>
+</body>
+</html>

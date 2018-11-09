@@ -105,21 +105,7 @@
 	margin:0 auto;
 	background:rgba(255,0,255);
 }
-.contents{
-	width:100%;
-	margin:0 auto;
-	padding-top:71px;
-}
-.ctt{
-	float:right;
-	width:228px;
-	height:441px;
-	margin:0 auto;
-	padding-top:1px;
-}
-.ctt2{
-	margin-top:8px;
-}
+
 /* 하단 레이아웃 영역 */
 .footerwrap{
 	width:100%;

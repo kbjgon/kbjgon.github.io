@@ -158,21 +158,35 @@ table {
 }
 /* 컨텐츠 영역 - product */
 .product{
-
 }
 .npt{
 	float:left;
 	width:495px;
 	height:227px;
 	margin-bottom:10px;
-	background:teal;
+	border:1px solid #ddd;
+}
+.npt img{
+	position:relative;
+	top:30px;
+	left:1px;
+	margin:0 auto;
+	padding-left:40px;
+
 }
 .ppi{
 	float:right;
 	width:495px;
 	height:227px;
 	margin-bottom:10px;
-	background:aqua;
+	border:1px solid #ddd;
+}
+.ppi img{
+	position:relative;
+	top:30px;	
+	left:0;
+	margin:0 auto;
+	padding-left:40px;
 }
 .rep{
 	clear:both;
@@ -191,6 +205,7 @@ table {
 	margin-bottom:10px;
 	background:fuchsia;
 }
+/* 컨텐츠 영역 - sale */
 .sale{
 	float:left;
 	width:760px;
@@ -198,6 +213,7 @@ table {
 	margin-bottom:10px;
 	background:gray;
 }
+/* 컨텐츠 영역 - bpd */
 .bpd{
 	clear:both;
 	float:right;
@@ -205,6 +221,51 @@ table {
 	height:614px;
 	margin-top:-624px;
 	background:yellowgreen;
+}
+/* 컨텐츠 영역 - gnews */
+.gnews{
+	width:100%;
+	height:273px;
+	margin-bottom:10px;
+	background:blue;
+}
+/* 컨텐츠 영역 - shop */
+.shop{
+	float:left;
+	width:741px;
+	height:331px;
+	margin-bottom:10px;
+	background:red;
+}
+/* 컨텐츠 영역 - gsearch */
+.gsearch{
+	float:right;
+	width:247px;
+	height:333px;
+	margin-bottom:10px;
+	background:skyblue;
+}
+/* 컨텐츠 영역 -quick */
+.quick{
+	clear:both;
+	width:100%;
+	height:269px;
+	margin-bottom:10px;
+	background:sienna;
+}
+/* 컨텐츠 영역 -bninfo */
+.bninfo{
+	width:100%;
+	height:145px;
+	margin-bottom:10px;
+	background:navy;
+
+}
+/* 컨텐츠 영역 -crape */
+.crape{
+	width:100%;
+	height:88px;
+	background:tomato;
 }
 /* 하단 레이아웃 영역 */
 .footerwrap{

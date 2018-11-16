@@ -302,31 +302,15 @@ table {
 	height:273px;
 	margin-bottom:10px;
 }
-.gc{
-	width:327px;
+.gnews .sts{
+	width:325px;
 	height:272px;
-	border:1px solid rgba(217,217,217);
+	background:lawngreen;
 }
-.gc h2{
-	width:77px;
-	height:19px;
-	text-align:center;
-	font-size:15px;
-	color:rgba(83,83,83);
-}
-.gc img{
-	position:relative;
-	top:16px;
-	left:22px;
-	width:87px;
-	height:83px;
-}
-.gt{
+ .gnews .gt{
 	float:right;
-	width:664px;
-	height:273px;
-	margin-top:-272px;
-	border:1px solid rgba(217,217,217);
+	
+	background:brown;
 }
 /* 컨텐츠 영역 - shop */
 .shop{

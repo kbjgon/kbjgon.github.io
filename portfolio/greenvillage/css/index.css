@@ -37,7 +37,6 @@ table {
 	width:100%;
 	height:5000px;
 	margin:0 auto;
-	background:rgba(255,255,255);
 }
 /* 상단 레이이웃 영역 */
 .headewrap{
@@ -173,7 +172,7 @@ table {
 	width:495px;
 	height:227px;
 	margin-bottom:10px;
-	border:1px solid #ddd;
+	border:1px solid #d8d8d8;
 }
 .npt img{
 	float:left;
@@ -195,7 +194,7 @@ table {
 	width:495px;
 	height:227px;
 	margin-bottom:10px;
-	border:1px solid #ddd;
+	border:1px solid #d8d8d8;
 }
 .ppi img{
 	float:left;
@@ -218,7 +217,7 @@ table {
 	clear:both;
 	width:100%;
 	height:227px;
-	border:1px solid #ddd;
+	border:1px solid #d8d8d8;
 }
 .rep img{
 	float:left;
@@ -249,7 +248,7 @@ table {
 	margin-bottom:10px;
 }
 .br img{
-	border:1px solid #ddd;
+	border:1px solid #d8d8d8;
 }
 /* 컨텐츠 영역 - sale */
 .sale{
@@ -262,7 +261,7 @@ table {
 	float:left;
 	margin-top:1px;
 	padding-left:7px;
-	border:1px solid #ddd;
+	border:1px solid #d8d8d8;
 }
 /* 컨텐츠 영역 - bpd */
 .bpd{
@@ -281,9 +280,6 @@ table {
 	margin-top:7px;
 	padding-left:15px;
 	color:rgba(255,255,255);
-	/* background-image:url("../images/btn_more_2.png");
-	background-repeat:no-repeat;
-	background-position:24px;*/
 }
 .bpd img{
 	width:170px;
@@ -302,15 +298,102 @@ table {
 	height:273px;
 	margin-bottom:10px;
 }
-.gnews .sts{
+.gc{
+	float:left;
 	width:325px;
 	height:272px;
-	background:lawngreen;
+	border:1px solid #d8d8d8;
 }
- .gnews .gt{
+.gc h2{
+	float:left;
+	font-size:18px;
+	text-align:left;
+	width:100%;
+	margin:0 auto;
+	padding-top:15px;
+	padding-left:18px;
+	padding-bottom:15px;
+	border-bottom:1px solid #d8d8d8;
+}
+.gc a img{
 	float:right;
-	
-	background:brown;
+	margin-top:-35px;
+	padding-right:18px;
+}
+.gc::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.gc .sts{
+	position:relative;
+	top:14px;
+	left:19px;
+}
+.sts p{
+	position:absolute;
+	top:52px;
+	left:116px;
+	font-size:15px;
+	text-align:center;
+	color:rgba(0,4,6);
+}
+.sts ul > li{
+	position:absolute;
+	top:81px;
+    left:117px;
+	width:171px;
+	height:69px;
+	text-align:left;
+	color:rgba(92,88,89);
+}
+ .gc .bc{
+	position:relative;
+	top:14px;
+	left:0px;
+}
+.bc p{
+	position:absolute;
+	top:3px;
+	left:113px;
+	font-size:15px;
+	text-align:center;
+	color:rgba(0,4,6);
+}
+.bc ul > li{
+	position:absolute;
+	top:29px;
+    left:112px;
+	width:169px;
+	height:64px;
+	text-align:left;
+}
+.bc::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.gt{
+	float:right;
+	width:663px;
+	height:272px;
+	border:1px solid #d8d8d8;
+}
+.gt h2{
+	float:left;
+	font-size:18px;
+	text-align:left;
+	width:100%;
+	margin:0 auto;
+	padding-top:15px;
+	padding-left:15px;
+	padding-bottom:15px;
+	border-bottom:1px solid #d8d8d8;
+}
+.gt a img{
+	float:right;
+	margin-top:-36px;
+	padding-right:18px;
 }
 /* 컨텐츠 영역 - shop */
 .shop{
@@ -329,8 +412,7 @@ table {
 	padding-top:18px;
 	padding-left:10px;
 	padding-bottom:28px;
-	border:1px solid #ddd;
-	border-left-width:0;
+	border-bottom:1px solid #d8d8d8;
 	color:rgba(82,82,82);
 }
 .shop div img{
@@ -367,7 +449,7 @@ table {
 	width:248px;
 	height:331px;
 	margin-bottom:10px;
-	border:1px solid #ddd;
+	border:1px solid #d8d8d8;
 }
 /* 컨텐츠 영역 -quick */
 .quick{
@@ -426,9 +508,7 @@ table {
 	color:#494949;
 }
 .quick .board h2{
-	background-image:url("../images/btn_more_2.png");
-	background-repeat:no-repeat;
-	background-position:95% 90%;
+	
 }
 .quick .qfoot > div{
 	overflow:hidden;
@@ -473,7 +553,6 @@ table {
 .crape{
 	width:100%;
 	height:88px;
-	background:tomato;
 }
 .crape > div img{
 	width:1000px;
@@ -485,39 +564,6 @@ table {
 	height:40px;
 	margin:0 auto;
 	background:rgba(89,98,81);
-}
-.footer .fqm{
-	width:435px;
-	height:40px;
-	margin:0 auto; 
-}
-.footer .fqm a img{
-	float:left;
-	margin-top:15px;
-	margin-left:1px;
-}
-.footer .ci{
-	width:534px;
-	height:109px;
-	margin:0 auto;
-}
-.footer .ci h2{
-	float:left;
-	font-size:15px;
-	padding-top:10px;
-	padding-left:17px;
-	color:rgba(232,255,242);
-}
-.footer .ci li{  
-	float:left;
-	padding-top:5px;
-	padding-left:15px;
-	color:rgba(145,157,145);
-}
-.footer .sc{
-	float:left;
-	padding-top:8px;
-	padding-left:15px;
 }
 .footerwrap{
 	width:100%;

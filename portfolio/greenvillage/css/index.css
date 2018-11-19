@@ -395,6 +395,43 @@ table {
 	margin-top:-36px;
 	padding-right:18px;
 }
+.gt::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.gvp img{
+	float:left;
+	width:296px;
+	height:170px;
+	margin-top:13px;
+	margin-left:21px;
+}
+.gvp p{
+	position:relative;
+	top:12px;
+	left:19px;
+	width:170px;
+	height:13px;
+	font-size:13px;
+	text-align:center;
+	color:rgba(30,40,39);
+}
+.gvs img{
+	float:right;
+	width:295px;
+	height:169px;
+	margin-top:13px;
+	margin-right:22px;
+}
+.gvs p{
+	position:relative;
+	top:11px;
+	left:338px;
+	width:292px;
+	font-size:13px;
+	text-align:center;
+}
 /* 컨텐츠 영역 - shop */
 .shop{
 	float:left;
@@ -443,6 +480,64 @@ table {
 	left:160px;
 	margin:0 auto;
 }
+.ass::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+/* 아산모종점 영역 */
+.wib li a{
+	position:relative;
+	top:10px;
+    left:266px;
+	font-size:15px;
+	color:rgba(85,73,109);
+}
+.wib strong{
+	position:relative;
+	top:26px;
+	left:186px;
+	font-size:12px;
+	color:rgba(72,100,60);
+}
+.wib img{
+	float:right;
+	margin-top:-7px;
+	margin-right:280px;
+}
+.wib::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+/* 원주현신점 영역*/
+.sfp li a{
+	position:relative;
+	top:-19px;
+    left:503px;
+	font-size:15px;
+	color:rgba(85,73,109);
+}
+.sfp strong{
+	position:relative;
+	top:-3px;
+	left:424px;
+	font-size:12px;
+	color:rgba(72,100,60);
+	
+}
+.sfp img{
+	float:right;
+	margin-top:-40px;
+	margin-right:25px;
+}
+.sfp::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+/* 송파파인점 영역 */
+
 /* 컨텐츠 영역 - gsearch */
 .gsearch{
 	float:right;
@@ -508,7 +603,21 @@ table {
 	color:#494949;
 }
 .quick .board h2{
-	
+	font-size:15px;
+	font-family:"MalgunGothic";
+	text-align:left;
+
+}
+.board img{
+	float:right;
+	margin-top:-16px;
+	margin-right:15px;
+}
+.board ul{
+	margin:5px 0;
+}
+.board li{
+	margin:10px 0;
 }
 .quick .qfoot > div{
 	overflow:hidden;
@@ -565,19 +674,67 @@ table {
 	margin:0 auto;
 	background:rgba(89,98,81);
 }
+.fqm{
+	width:441px;
+	height:40px;
+	margin:0 auto;
+}
+.fqm img{
+	float:left;
+	margin-top:13px;
+}
+.cp{
+	width:535px;
+	height:109px;
+	margin:0 auto;
+}
+.cp p{
+	text-align:left;
+	color:rgba(137,142,138);
+}
+.gv{
+	float:left;
+	padding-top:15px;
+	padding-left:41px;
+}
+.sc{
+	float:left;
+	padding-top:6px;
+    padding-left:43px;
+}
+.footer::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.flogo{
+	display:inline-block;
+	position:relative;
+	top:-78px;
+    left:467px;
+	width:145px;
+	height:50px;
+}
+.flogo a img{
+	position:absolute;
+	top:8px;
+	left:9px;
+}
+.rlogo{
+	display:inline-block;
+	float:right;
+	width:228px;
+	height:103px;
+	margin-top:-105px;
+	margin-right:362px;
+}
+.rlogo a img{
+	position:relative;
+	top:1px;
+}
 .footerwrap{
 	width:100%;
 	height:148px;
 	margin:0 auto;
 	background:rgba(41,49,38);
-}
-.flogo img{
-	float:left;
-	margin-top:79px;
-	margin-left:473px;
-}
-.rlogo img{
-	float:right;
-	margin-top:43px;
-    margin-right:447px;
 }

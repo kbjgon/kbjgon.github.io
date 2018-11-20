@@ -35,7 +35,6 @@ table {
 /* Layout */
 .wrap{
 	width:100%;
-	height:5000px;
 	margin:0 auto;
 }
 /* 상단 레이이웃 영역 */
@@ -175,67 +174,22 @@ table {
 	border:1px solid #d8d8d8;
 }
 .npt img{
-	float:left;
-	margin-top:30px;
-	padding-left:48px;
-}
-.npt samp{
-	width:368px;
-	margin:0 auto;
-}	
-.npt samp p{
-	float:left;
-	font-size:13px;
+	display:block;
 	text-align:center;
-	margin-left:40px;
 }
 .ppi{
 	float:right;
-	width:495px;
-	height:227px;
+	width:487px;
+	height:226px;
 	margin-bottom:10px;
 	border:1px solid #d8d8d8;
-}
-.ppi img{
-	float:left;
-	margin-top:30px;
-	padding-left:48px;
-}
-.ppi samp{
-	width:368px;
-	margin:0 auto;
-}
-.ppi samp p{
-	float:left;
-	font-size:13px;
-	text-align:center;
-	color:rgba(47,51,50);
-	padding-top:11px;
-	padding-left:40px;
 }
 .rep{
 	clear:both;
 	width:100%;
-	height:227px;
-	border:1px solid #d8d8d8;
-}
-.rep img{
-	float:left;
-	margin-top:30px;
-	padding-left:48px;
-
-}
-.rep samp{
-	width:368px;
+	height:226px;
 	margin:0 auto;
-}
-.rep samp p{
-	float:left;
-	font-size:13px;
-	text-align:center;
-	color:rgba(47,51,50);
-	padding-top:11px;
-	padding-left:64px;
+	border:1px solid #d8d8d8;
 }
 /* 컨텐츠 영역 - best */
 .best{
@@ -668,39 +622,28 @@ table {
 	border:1px solid #d8d8d8;
 } 
 /* 하단 레이아웃 영역 */
-.footer{
+.fqmwrap{
 	width:100%;
 	height:40px;
-	margin:0 auto;
 	background:rgba(89,98,81);
 }
 .fqm{
-	width:441px;
-	height:40px;
+	width:1000px;
 	margin:0 auto;
 }
-.fqm img{
-	float:left;
-	margin-top:13px;
+.fqm a{
+	position:relative;
+	top:16px;
+	left:255px;
 }
-.cp{
-	width:535px;
-	height:109px;
+.footerwrap{
+	width:100%;
 	margin:0 auto;
+	background:rgba(41,49,38);
 }
-.cp p{
-	text-align:left;
-	color:rgba(137,142,138);
-}
-.gv{
-	float:left;
-	padding-top:15px;
-	padding-left:41px;
-}
-.sc{
-	float:left;
-	padding-top:6px;
-    padding-left:43px;
+.footer{
+	width:1000px;
+	margin:0 auto;
 }
 .footer::after{
 	content:"";
@@ -709,32 +652,43 @@ table {
 }
 .flogo{
 	display:inline-block;
-	position:relative;
-	top:-78px;
-    left:467px;
-	width:145px;
-	height:50px;
+	float:left;
+	margin:0 auto;
 }
-.flogo a img{
-	position:absolute;
-	top:8px;
-	left:9px;
+.flogo a{
+	position:relative;
+	top:-66px;
+	left:90px;
 }
 .rlogo{
 	display:inline-block;
 	float:right;
-	width:228px;
-	height:103px;
-	margin-top:-105px;
-	margin-right:362px;
-}
-.rlogo a img{
-	position:relative;
-	top:1px;
-}
-.footerwrap{
-	width:100%;
-	height:148px;
 	margin:0 auto;
-	background:rgba(41,49,38);
 }
+.rlogo a{
+	position:relative;
+	top:-96px;
+	left:0;
+}
+.cp{
+	position:relative;
+	top:15px;
+	left:12px;
+	width:535px;
+	height:109px;
+	margin:0 auto;
+}
+.gv{
+	margin:0px 0;
+}
+.gv p{
+	margin:7px 0;
+	color:rgba(137,142,138);
+}
+.sc{
+	margin:10px 0;
+}
+.sc p{
+	margin:6px 0;
+	color:rgba(137,142,138);
+}	

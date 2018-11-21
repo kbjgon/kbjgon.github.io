@@ -121,7 +121,7 @@ table {
 	color:rgba(246,255,245);
 	padding:15px;
 }
-.sm > div > a > img{
+.sm div{
 	position:absolute;
 	top:105px;
     left:451px;
@@ -147,7 +147,7 @@ table {
 }
 /* 컨텐츠 영역 - visual */
 .visual{
-	margin-top:12px;
+	margin-top:11px;
 }
 .visual img:last-child{
 	margin-bottom:0;
@@ -276,6 +276,7 @@ table {
 	font-size:13px;
 	color:rgba(101,118,82);
 }
+/* rep 영역 */
 /* 컨텐츠 영역 - best */
 .best{
 	

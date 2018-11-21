@@ -31,7 +31,6 @@ table {
 	height:1px;
 	line-height:1;
 }
-
 /* Layout */
 .wrap{
 	width:100%;
@@ -173,10 +172,37 @@ table {
 	margin-bottom:10px;
 	border:1px solid #d8d8d8;
 }
-.npt img{
+.npt ul{
+	padding-left:76px;
+}
+.npt ul::after{
+	content:"";
 	display:block;
+	clear:both;
+}
+.npt li{
+	float:left;
+	width:calc(100% / 3);
+	padding-top:26px;
+}
+.npt a{
+	display:block;
+	margin:0 auto;
 	text-align:center;
 }
+.npt strong{
+	display:block;
+	text-align:center;
+	font-size:14px;
+	padding-top:6px;
+	color:rgba(47,51,50);
+}
+.npt span{
+	font-size:13px;
+	color:rgba(101,118,82);
+	
+}
+/* npt 영역 */
 .ppi{
 	float:right;
 	width:487px;
@@ -184,12 +210,71 @@ table {
 	margin-bottom:10px;
 	border:1px solid #d8d8d8;
 }
+.ppi ul{
+	padding-left:76px;
+}
+.ppi ul::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.ppi li{
+	float:left;
+	width:calc(100% / 3);
+	padding-top:26px;
+}
+.ppi a{
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+.ppi strong{
+	display:block;
+	text-align:center;
+	font-size:14px;
+	padding-top:4px;
+	color:rgba(47,51,50);
+}
+.ppi span{
+	font-size:13px;
+	color:rgba(101,118,82);
+}
+/* ppi 영역 */
 .rep{
 	clear:both;
 	width:100%;
 	height:226px;
 	margin:0 auto;
 	border:1px solid #d8d8d8;
+}
+.rep ul{
+	padding-left:73px;
+}
+.rep ul::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.rep li{
+	float:left;
+	width:calc(100% / 6);
+	padding-top:34px;
+}
+.rep a{
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+.rep strong{
+	display:block;
+	text-align:center;
+	font-size:14px;
+	padding-top:4px;
+	color:rgba(47,51,50);
+}
+.rep span{
+	font-size:13px;
+	color:rgba(101,118,82);
 }
 /* 컨텐츠 영역 - best */
 .best{
@@ -206,15 +291,21 @@ table {
 }
 /* 컨텐츠 영역 - sale */
 .sale{
-	float:left;
-	width:760px;
+	clear:both;
+	width:759px;
 	height:204px;
-	margin-bottom:10px;
 }
-.sale img{
+.sale ul{
+	padding-top:1px;
+}
+.sale li{
 	float:left;
-	margin-top:1px;
-	padding-left:7px;
+	width:calc(100% / 3);
+	padding-left:2px;
+}
+.sale a{
+	display:block;
+	margin:0 auto;
 	border:1px solid #d8d8d8;
 }
 /* 컨텐츠 영역 - bpd */
@@ -224,7 +315,7 @@ table {
 	float:right;
 	width:230px;
 	height:614px;
-	margin-top:-624px;
+	margin-top:-616px;
 	background:rgba(65,61,58)
 }
 .bpd h2{

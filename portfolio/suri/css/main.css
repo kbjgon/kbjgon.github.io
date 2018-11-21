@@ -141,20 +141,24 @@ body{
 .leftbox .photogallery{
 	width:100%;
 	height:275px;
-	background:rgba(0,124,195,0.1);
+	border:1px solid #ddd;
+	border-top:3px solid dodgerblue;
 }
 .leftbox .photogallery h2{
-	color:deepskyblue;
+	color:dodgerblue;
 	font-size:18px;
+	padding-top:15px;
+	padding-left:20px;
 }
 .leftbox .photogallery img{
-	margin-top:29px;
+	float:left;
+	margin-top:25px;
+	margin-left:29px;
 }
 .leftbox .bulletinwrap{
 	width:100%;
 	height:266px;
 	margin-top:22px;
-	background:dodgerblue;
 }
 .bulletinwrap::after{
 	content:"";
@@ -168,7 +172,8 @@ body{
 	height:100%;
 }
 .bulletinwrap .notice{
-	background:blueviolet;
+	border:1px solid #d8d8d8;
+	border-top:3px solid #91ca6d;
 }
 .bulletinwrap .notice h2{
 	font-size:18px;
@@ -184,7 +189,8 @@ body{
 	padding-left:11px;
 }
 .bulletinwrap .program{
-	background:chartreuse;
+	border:1px solid #d8d8d8;
+	border-top:3px solid #ff7700;
 }
 .program li{
 	color:rgba(0,0,0,0.9);
@@ -201,7 +207,8 @@ body{
 }
 
 .bulletinwrap .post{
-	background:aqua;
+	border:1px solid #d8d8d8;
+	border-top:3px solid #feb800;
 }
 .post li{
 	color:rgba(0,0,0,0.9);

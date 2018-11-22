@@ -88,6 +88,7 @@ table {
 	width:20px;
 	height:20px;
 }
+
 /* 상단 UI 영역 */
 .nav{
 	width:100%;
@@ -783,4 +784,12 @@ table {
 .sc p{
 	margin:6px 0;
 	color:rgba(137,142,138);
-}	
+}
+
+/* 좌측베너 */
+.aside{
+	position:absolute;
+	top:0;
+	width:90px;
+	margin:106px 0 0 -90px;
+}

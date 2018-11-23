@@ -29,5 +29,41 @@
         <!-- //.전체 푸더 감싸은 영역 -->
    </div>
     <!-- //.전체감싸은영역-->
+    <script>
+            $(function() {
+                var $doc = $(document);
+                var $win = $(window);
+                var $nav = $('.nav');
+                var navOffTop = $nav.offset().top;
+                var isFixed = false;
+    
+                function menu() {
+                    if ( $win.scrollTop() >= navOffTop ) {
+                        if ( !isFixed ) {
+                            isFixed = true;
+                            $nav.addClass('affix');
+                        }
+                    } else if ( isFixed ) {
+                        isFixed = false;
+                        $nav.removeClass('affix');
+                    }
+                }
+    
+                $win.on('scroll', menu);
+                menu();
+    
+                $nav.on('click', 'a[href^="#"]', function(e) {
+                    e.preventDefault();
+                    var hash = this.hash;
+                    var offset = $(hash).offset().top;
+                    $('body, html').animate({
+                        scrollTop: offset
+                    }, 600, 'easeInOutQuart', function() {
+                        document.location.hash = hash;
+                    });
+                });
+    
+            });
+        </script>
 </body>
 </html>

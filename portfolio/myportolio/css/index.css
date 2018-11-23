@@ -1,0 +1,56 @@
+/*reset  */
+*,*::before,*::after{margin:0;padding:0;list-style:none;border:0;color:#000000;font-size:13px;font-family:'Apple SD Gothic Neo',Applegothic,'Malgun Gothic','맑은 고딕',Dotum,'돋움',Arial, Verdana, sans-serif;font-weight:500;text-decoration:none;box-sizing:border-box;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.tts{
+	overflow:hidden;
+	position:absolute;
+	top:-9999em;
+	width:1px;
+	height:1px;
+	line-height:1;
+}
+/* Layout */
+/* 상단 - 레이아웃 영역 */
+.wrap{
+    width:100%;
+    background:rgba{255,255,255};
+}
+.header{
+    width:100%;
+    height:90px;
+    background:rgba(255,215,0,0.8);
+}
+/* 중간 -레이아웃 영역*/
+.sectionwrap{
+    width:100%;
+    height:694px;
+    background:rgba(192,192,192);
+}
+/* 하단 -레이아웃 영역*/
+.footerwrap{
+    width:100%;
+    height:355px;
+    background:rgba(115,209,247);
+}

@@ -34,114 +34,115 @@ table {
 /* Layout */
 /* 레이아웃 -상단 영역 */
 .wrap{
-    width:100%;
-   margin:0 auto;
+	width:100%;
+	margin:0 auto;
 }
 .headerwrap{
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:1;
-    width:100%;
-    height:90px;
-    background:rgba(255,215,0,0.5);
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1;
+	width:100%;
+	height:90px;
+	background:rgba(255,215,0,0.5);
 }
 .header{
-    width:1100px;
-    height:90px;
-    margin:0 auto;
+	width:1100px;
+	height:90px;
+	margin:0 auto;
 }
 h1 a{
-    float:left;
-    display:block;
-    font-size:30px;
-    text-align:center;
-    width:95px;
-    margin-top:15px;
-    padding-left:23px;
-    color:rgb(255,0,255);         
+	float:left;
+	display:block;
+	font-size:30px;
+	text-align:center;
+	width:95px;
+	margin-top:15px;
+	padding-left:23px;
+	color:rgb(95,0,255);         
 }
 h1 a:hover{
-    color:rgba(0,0,0,0.5);
+	color:rgb(105,80,76);
 }
 /* 상단 -매뉴 영역 */
-.tnb{
-    display:block;
-    text-align:center;
-}
-.tnb a{
-    position:relative;
-    top:53px;
-    left:-290px;
-    text-align:center;
-    font-size:13px;
-    font-family:"Malgun Gothic";
-    width:50px;
-    height:11px;
-    color:rgb(255,255,255);
+.nav{
+	display:block;
+	text-align:center;
  }
- .tnb a:hover{
-    border-bottom:3px solid rgb(191,255,0);
-    background:rgba(43,104,167,0.5);
- }
- .tnb::after{
-     content:"";
-     display:block;
-     clear:both;
- }
- .nav{
-    display:block;
-    text-align:center;
- }
- .nav ul{
-    position:absolute;
-    top:35px;
-    left:1000px;
-    display:block;
-    text-align:center;
+.nav ul{
+	position:absolute;
+	top:35px;
+	left:1000px;
+	display:block;
+	text-align:center;
  }
 .nav li{
-    display:inline-block;
+	display:inline-block;
 }
 .nav a {
-    display:block;
-    text-align:center;
-    font-size:16px;
-    font-family:"Malgun Gothic";
-    margin-left:50px;
-    color:rgb(255,255,255);
+	display:block;
+	text-align:center;
+	font-size:16px;
+	font-family:"Malgun Gothic";
+	margin-left:50px;
+	color:rgb(0,0,0);
 }
 .nav a:hover{
-    border-bottom:3px solid rgb(191,255,0);
-    background:rgba(43,104,167,0.5);
+	border-bottom:3px solid rgb(255,0,0);
+	background:rgb(43,104,167);
+	color:rgb(255,255,255);
 }
 /* 중간 -레이아웃 영역*/
-.sectionwrap{
-    width:100%;
-    height:694px;
-    background:rgb(134,135,137);
+.section{
+	width:100%;
+	height:694px;
+	background-image:url("../images/IiNfJSm5w7UVGyyvdvw9Tcizleug.jpg");
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:cover;
+	margin-bottom:10px;
+	border:2px solid rgb(0,0,0);
+}
+.section h1{
+	position:relative;
+	top:389px;
+	left:60px;
+	text-align:left;
+	font-size:40px;
+	color:rgb(255,255,255);
+}
+/* 프로빌 영역 */
+.profile{
+	width:100%;
+	height:694px;
+	border:1px solid rgb(134,134,137);
+	border-top:3px solid rgb(0,118,68);
+	margin-bottom:10px;
+}
+.profile h2{
+	position:absolute;
+	top:723px;
+	left:965px;
+	font-size:25px;
 }
 /* 포트폴리오 영역 */
 .plr{
-    width:100%;
-    height:694px;
-    background:rgb(191,255,0);
-}
-/* 취미 영역 */
-.hobby{
-    width:100%;
-    height:694px;
-    background:rgb(255,0,255);
+	width:100%;
+	height:694px;
+	border:1px solid rgb(134,134,137);
+	border-top:3px solid rgb(191,255,0);
+	margin-bottom:10px;
 }
 /* 기술 영역 */
 .skill{
-    width:100%;
-    height:694px;
-    background:rgb(0,118,68);
+	width:100%;
+	height:694px;
+	border:1px solid rgb(134,134,137);
+	border-top:3px solid rgb(95,0,255);
 }
 /* 하단 -레이아웃 영역*/
-.footerwrap{
-    width:100%;
-    height:355px;
-    background:rgb(115,209,247);
+.footer{
+	width:100%;
+	height:100px;
+	background:rgb(115,209,247);
 }

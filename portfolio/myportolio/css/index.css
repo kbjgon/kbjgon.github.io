@@ -56,10 +56,10 @@ h1 a{
 	display:block;
 	font-size:30px;
 	text-align:center;
-	width:95px;
+	width:291px;
 	margin-top:15px;
 	padding-left:23px;
-	color:rgb(95,0,255);         
+	color:rgb(0,255,255);         
 }
 h1 a:hover{
 	color:rgb(105,80,76);
@@ -96,20 +96,40 @@ h1 a:hover{
 .section{
 	width:100%;
 	height:694px;
-	background-image:url("../images/IiNfJSm5w7UVGyyvdvw9Tcizleug.jpg");
+	background-image:url("../images/main_img.jpg");
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	background-size:cover;
+	opacity:0.5;
 	margin-bottom:10px;
 	border:2px solid rgb(0,0,0);
 }
-.section h1{
+.section::after{
+	content:"";
+	display:block;
+	clear:both;
+	/* position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-image:url(../images/main_img.jpg);
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:cover;
+	opacity:0.5; */
+}
+.section h2{
 	position:relative;
 	top:389px;
 	left:60px;
 	text-align:left;
 	font-size:40px;
 	color:rgb(255,255,255);
+	text-shadow:1px 3px 1px purple;
+}
+.section h2:hover{
+	color:rgb(0,0,0);
 }
 /* 프로빌 영역 */
 .profile{
@@ -143,6 +163,6 @@ h1 a:hover{
 /* 하단 -레이아웃 영역*/
 .footer{
 	width:100%;
-	height:100px;
+	height:150px;
 	background:rgb(115,209,247);
 }

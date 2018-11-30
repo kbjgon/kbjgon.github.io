@@ -23,14 +23,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.tts{
-	overflow:hidden;
-	position:absolute;
-	top:-9999em;
-	width:1px;
-	height:1px;
-	line-height:1;
-}
 /* Layout */
 /* 레이아웃 -상단 영역 */
 .wrap{
@@ -53,11 +45,11 @@ table {
 }
 h1 a{
 	float:left;
-	display:block;
+	display:inline-block;
 	font-size:30px;
 	text-align:center;
 	text-shadow:1px 3px 1px white;
-	width:291px;
+	width:290px;
 	margin-top:15px;
 	padding-left:23px;
 	color:rgb(0,255,255);         

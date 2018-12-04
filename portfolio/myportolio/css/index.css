@@ -40,292 +40,84 @@ table {
 	background:rgba(115,209,247,0.9);
 }
 .header{
-	padding-left:700px;
+	width:1100px;
+	height:90px;
+	margin:0 auto;
 }
 .header h1{
 	float:left;
 	display:block;
 	text-align:center;
-	margin:0 auto;
-	padding-top:25px;
+	margin-top:30px;
+	margin-left:21px;
 }
-.header h1::after{
-	content:"";
-	display:block;
-	clear:both;
-}
-.header h1 a{
-	font-size:30px;
-	font-family:"Myriad Pro";
-	color:rgb(0,128,0);
-}
-.header h1 a:hover{
-	border-bottom:5px solid rebeccapurple;
+.header a{
+	font-size:35px;
 }
 /* 상단 -메뉴 영역 */
 .tnb{
+	float:right;
 	display:block;
-	text-align:center;
+	width:auto;
 }
 .tnb ul{
-	float:left;
-	display:block;
+	position:relative;
+	top:10px;
+	left:14px;
 	text-align:center;
-	margin:0 auto;
-	padding-top:40px;
-	padding-left:25px;
-}
-.tnb ul::after{
-	content:"";
-	display:block;
-	clear:both;
 }
 .tnb li{
 	float:left;
-	display:block;
-	text-align:center;
-}
-.tnb a{
-	float:left;
-	display:block;
-	text-align:center;
+	width:auto;
+	margin-top:32px;
+	padding-left:42px;
 	font-size:18px;
-	padding-left:40px;
 }
-.tnb a:hover{
-	color:blueviolet;
-}
-/* 레이아웃 -중간 영역 */
-.sectionwrap{
+/* 상단 - Ui 영역 */
+.visualwrap{
 	width:100%;
-	height:460px;
+	height:696px;
 	margin:0 auto;
 	background-image:url("../images/mainimg0.jpg");
-	background-repeat:np-repeat;
+	background-repeat:no-repeat;
 	background-position:50% 50%;
 	background-size:cover;
-	border:3px solid gold;
-	margin-bottom:10px;
+	opacity:0.5;
 }
-.sectionwrap ul{
-	display:block;
-	text-align:center;
-	padding-top:350px;
-	padding-left:32px;
+.visual{
+	position:relatoive;
+	width:404px;
+	height:45px;
+	margin:0 auto;
 }
-.sectionwrap li{
-	font-size:30px;
+.visual a{
+	position:absolute;
+	top:507px;
+    left:4px;
+	color:rgb(16,30,60);
+	font-size:43px;
 	font-family:"Myriad Pro";
-	color:brown;
+	font-weight:bold;
 }
-/* 프로필 - 영역 */
-.profile{
+/* 레이아웃 - 중단 영역 */
+.sectionwrap{
 	width:100%;
-	height:370px;
-	margin:0 auto;
-	border:3px solid forestgreen;
-	margin-bottom:10px;
+	height:696px;
+	background:fuchsia;
 }
-.profile h2{
-	display:block;
-	text-align:center;
-	font-size:25px;
-	font-family:"Myriad Pro";
-	margin:0 auto;
-	margin-top:6px;
-}
-.profile ul{
-	display:block;
-	text-align:center;
-	margin:0 auto;
-	padding-top:50px;
-}
-.profile li{
-	display:block;
-	text-align:center;
-	font-size:20px;
-	font-family:"Myriad Pro";
-	padding-top:15px;
-}
-/* 컨텐츠 영역 */
 .contentswrap{
 	width:100%;
-	height:470px;
-	margin:0 auto;
-	border:3px solid hotpink; 
-	margin-bottom:10px;
+	height:696px;
+	background:seagreen;
 }
-.contentswrap h2{
-	display:block;
-	text-align:center;
-	font-size:25px;
-	font-family:"Myriad Pro";
-	margin:0 auto;
-	margin-top:6px;
-}
-/* 컨텐츠 영역 -포트폴리오 */
-.suri{
-	float:left;
-	width:450px;
-	height:400px;
-	margin-left:14px;
-	background-image:url("../images/suri.png");
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-/* suri - 영역 */
-.suri ul{
-	display:block;
-	text-align:center;
-}
-.suri li{
-	margin-top:406px;
-}
-.suri a{
-	font-size:15px;
-}
-.suri a:hover{
-	border-bottom:2px solid royalblue;
-}
-/* busi - 영역 */
-.busi{
-	display:block;
-	text-align:ceneter;
-	margin:0 auto;
-}
-.busi ul{
-	display:block;
-	text-align:center;
-}
-.busi li{
-	margin-top:406px;
-}
-.busi a{
-	font-size:15px;
-	color:olive;
-}
-.busi a:hover{
-	border-bottom:2px solid red;
-}
-.busi .main{
-	float:left;
-	display:block;
-	text-align:center;
-	width:450px;
-	height:400px;
-	margin-left:6px;
-	background-image:url("../images/main.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.busi .sub{
-	float:left;
-	display:block;
-	text-align:center;
-	width:450px;
-	height:400px;
-	margin-left:10px;
-	background-image:url("../images/sub.png");
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.busi::after{
-	content:"";
-	display:block;
-	clear:both;
-}
-/* greenvillage - 영역 */
-.gv{
-	float:right;
-	display:block;
-	text-align:center;
-	width:450px;
-	height:400px;
-	margin-top:-420px;
-	margin-right:14px;
-	background-image:url("../images/greenvillage.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.gv ul{
-	display:block;
-	text-align:center;
-}
-.gv li{
-	margin-top:420px;
-}
-.gv a{
-	font-size:15px;
-	color:green;
-}
-.gv a:hover{
-	border-bottom:3px solid aqua;
-}
-/* Technology - 영역 */
-.thl{
+.portfolio{
 	width:100%;
-	height:275px;
-	margin:0 auto;
-	border:3px solid firebrick;
-}
-.thl h2{
-	display:block;
-	text-align:center;
-	font-size:25px;
-	font-family:"Myriad Pro";
-	padding-top:6px;
-}
-.tl{
-	float:left;
-	width:660px;
-	height:270px;
-	margin-top:-31px;
-    margin-left:310px;
-	background-image:url("../images/html5.css3.jpg");
-}
-.fh{
-	float:right;
-	display:block;
-	width:360px;
-    height:270px;
-	margin-top:-31px;
-	margin-right:543px;
-	background-image:url("../images/GitHub.jpg");
-}
-.fh li{
-	display:block;
-	text-align:center;
-	margin-top:235px;
-}
-.fh a{
-	font-size:15px;	
-	color:fuchsia;
-}
-.fh a:hover{
-	border-bottom:3px solid aquamarine;
+	height:696px;
+	background:wheat;
 }
 /* 레이아웃 - 하단 영역 */
 .footerwrap{
 	width:100%;
-	height:106px;
-	background:rgb(115,209,247);
-}
-.footer a{
-	float:right;
-	display:block;
-	text-align:center;
-	padding-top:10px;
-}
-.footer ul{
-	float:left;
-	display:block;
-	text-align:left;
-	padding-top:25px;
-}
-.footer li{
-	margin-top:8px;
-	padding-left:5px;
-	font-size:18px;
-	font-family:"Myriad Pro";
-	color:blueviolet;
+	height:127px;
+	background:rgb(128,128,128);
 }

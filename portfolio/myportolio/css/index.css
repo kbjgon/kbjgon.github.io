@@ -55,6 +55,10 @@ table {
 	font-size:35px;
 	font-weight:bold;
 }
+.header a:hover{	
+	color:greenyellow;
+	background:orangered;
+}
 /* 상단 -메뉴 영역 */
 .tnb{
 	float:right;
@@ -102,6 +106,9 @@ table {
 	font-size:43px;
 	font-family:"Myriad Pro";
 	font-weight:bold;
+}
+.visual a:hover{
+	color:#3871a6;
 }
 .visual a::after{
 	content:"";
@@ -173,6 +180,10 @@ table {
 	text-align:center;
 	padding-top:5px;
 }
+.suri li a:hover{
+	color:greenyellow;
+	background:orangered;
+}
 .suri a{
 	font-size:17px;
 	font-family:"Myriad Pro";
@@ -211,6 +222,10 @@ table {
 	text-align:center;
 	padding-top:5px;
 }
+.main li a:hover{
+	color:greenyellow;
+	background:orangered;
+}
 .main a{
 	font-size:17px;
 	font-family:"Myriad Por";
@@ -243,6 +258,10 @@ table {
 	display:block;
 	text-align:center;
 	padding-top:5px;
+}
+.sub li a:hover{
+	color:greenyellow;
+	background:orangered;
 }
 .sub a{
 	font-size:17px;
@@ -278,6 +297,10 @@ table {
 	display:block;
 	text-align:center;
 	padding-top:5px;
+}
+.gil li a:hover{
+	color:greenyellow;
+	background:orangered;
 }
 .gil a{
 	font-size:17px;
@@ -359,6 +382,10 @@ table {
 	text-align:center;
 	padding-top:5px;
 }
+.ghb li a:hover{
+	color:greenyellow;
+	background:orangered;
+}
 .ghb a{
 	font-size:17px;
 	font-family:"Myraiad Por";
@@ -381,7 +408,7 @@ table {
 	font-size:15px;
 	font-family:"Gulim";
 	color:greenyellow;
-	padding-top:25px;
+	padding-top:28px;
 }
 .flogo img{
 	float:right;

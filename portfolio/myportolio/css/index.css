@@ -56,7 +56,7 @@ table {
 	font-weight:bold;
 }
 .header a:hover{	
-	color:greenyellow;
+	color:yellow;
 	background:orangered;
 }
 /* 상단 -메뉴 영역 */
@@ -181,7 +181,7 @@ table {
 	padding-top:5px;
 }
 .suri li a:hover{
-	color:greenyellow;
+	color:yellow;
 	background:orangered;
 }
 .suri a{
@@ -223,7 +223,7 @@ table {
 	padding-top:5px;
 }
 .main li a:hover{
-	color:greenyellow;
+	color:yellow;
 	background:orangered;
 }
 .main a{
@@ -247,7 +247,7 @@ table {
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	background-size:cover;
-	border:1px solid #ffdf3e;
+	border:1px solid #3871a6;
 }
 .sub ul{
 	display:block;
@@ -260,7 +260,7 @@ table {
 	padding-top:5px;
 }
 .sub li a:hover{
-	color:greenyellow;
+	color:yellow;
 	background:orangered;
 }
 .sub a{
@@ -299,7 +299,7 @@ table {
 	padding-top:5px;
 }
 .gil li a:hover{
-	color:greenyellow;
+	color:yellow;
 	background:orangered;
 }
 .gil a{
@@ -383,7 +383,7 @@ table {
 	padding-top:5px;
 }
 .ghb li a:hover{
-	color:greenyellow;
+	color:yellow;
 	background:orangered;
 }
 .ghb a{
@@ -406,9 +406,10 @@ table {
 	text-align:center;
 	width:100%;
 	height:25px;
-	font-size:15px;
+	font-size:18px;
 	font-family:"Gulim";
-	color:greenyellow;
+	font-weight:bold;
+	color:yellow;
 	padding-top:35px;
 }
 .flogo img{

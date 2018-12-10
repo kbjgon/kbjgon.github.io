@@ -138,9 +138,9 @@ table {
 }
 .profile li{
 	position:relative;
-	top:15px;
+	top:20px;
 	left:0;
-	height:100px;
+	height:85px;
 	font-size:23px;
 	font-family:"Myriad Pro";
 	font-weight:bold;

@@ -4,34 +4,105 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>kbjgon - Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128873883-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-128873883-1');
-	</script>
+	<title>ByeongJinportfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/common/uxDetect.min.js"></script>
 </head>
 <body>
-	<nav class="nav">
-		<a href="portfolio/busi/index.html" target="_blank" title="새창열림">Portfolio - E-BUSINESS COPY</a>
-		<a href="portfolio/suri/index.html" target="_blank" title="새창열림">Portfolio - SURI</a>
-	</nav>
-	<script type="text/javascript">
-		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-		s1.async=true;
-		s1.src='https://embed.tawk.to/5bd7ab6865224c2640514bc6/default';
-		s1.charset='UTF-8';
-		s1.setAttribute('crossorigin','*');
-		s0.parentNode.insertBefore(s1,s0);
-		})();
+   <div class="wrap">
+		<div class="headerwrap">
+			<header class="header">
+				<h1><a herf="#">Byeong Jin Kim</a></h1>
+			</header>
+			<!-- //.해더 영역 -->
+		</div>
+		<!-- //. 해더 전체감싸은 영역 -->
+		<div class="visualwrap">
+			<div class="visual">
+
+			</div>
+		</div>
+		<main class="container">
+			<section class="section">
+				<h2>Porftolilo</h2>
+				<article>
+					<ul>
+						<li>
+							<a href="#">
+								<div class="imgbox">
+									<img src="images/sub.png" alt="비지니스-서브">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="imgbox">
+									<img src="images/main.jpg" alt="비지니스-메인">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="imgbox">
+									<img src="images/suri.png" alt="안양수리장애인종합복지관">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="imgbox">
+									<img src="images/greenvillage.jpg" alt="초록마을">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</article>
+			</section>
+			<!-- //.섹션 영역 -->
+		</main>
+		<!-- //.섹션 전체감싸은 영역 -->
+		<div class="footerwrap">
+			
+		</div>
+		<!-- //.푸더 전체 감싸은 영역 -->
+   </div>
+	<!-- //.전체감싸은영역-->
+	<script>
+			$(function() {
+				var $doc = $(document);
+				var $win = $(window);
+				var $nav = $('.nav');
+				var navOffTop = $nav.offset().top;
+				var isFixed = false;
+	
+				function menu() {
+					if ( $win.scrollTop() >= navOffTop ) {
+						if ( !isFixed ) {
+							isFixed = true;
+							$nav.addClass('affix');
+						}
+					} else if ( isFixed ) {
+						isFixed = false;
+						$nav.removeClass('affix');
+					}
+				}
+				$win.on('scroll', menu);
+				menu();
+	
+				$nav.on('click', 'a[href^="#"]', function(e) {
+					e.preventDefault();
+					var hash = this.hash;
+					var offset = $(hash).offset().top;
+					$('body, html').animate({
+						scrollTop: offset
+					}, 600, 'easeInOutQuart', function() {
+						document.location.hash = hash;
+					});
+				});
+	
+			});
 		</script>
-		<!--End of Tawk.to Script-->
 </body>
-</html> 
+</html>

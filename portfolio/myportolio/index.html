@@ -1,108 +1,93 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>ByeongJinportfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="js/common/uxDetect.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Myportfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-   <div class="wrap">
-		<div class="headerwrap">
-			<header class="header">
-				<h1><a herf="#">Byeong Jin Kim</a></h1>
-			</header>
-			<!-- //.해더 영역 -->
-		</div>
-		<!-- //. 해더 전체감싸은 영역 -->
-		<div class="visualwrap">
-			<div class="visual">
-
-			</div>
-		</div>
-		<main class="container">
-			<section class="section">
-				<h2>Porftolilo</h2>
-				<article>
-					<ul>
-						<li>
-							<a href="#">
-								<div class="imgbox">
-									<img src="images/sub.png" alt="비지니스-서브">
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="imgbox">
-									<img src="images/main.jpg" alt="비지니스-메인">
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="imgbox">
-									<img src="images/suri.png" alt="안양수리장애인종합복지관">
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="imgbox">
-									<img src="images/greenvillage.jpg" alt="초록마을">
-								</div>
-							</a>
-						</li>
-					</ul>
-				</article>
-			</section>
-			<!-- //.섹션 영역 -->
-		</main>
-		<!-- //.섹션 전체감싸은 영역 -->
-		<div class="footerwrap">
-			
-		</div>
-		<!-- //.푸더 전체 감싸은 영역 -->
-   </div>
-	<!-- //.전체감싸은영역-->
-	<script>
-			$(function() {
-				var $doc = $(document);
-				var $win = $(window);
-				var $nav = $('.nav');
-				var navOffTop = $nav.offset().top;
-				var isFixed = false;
-	
-				function menu() {
-					if ( $win.scrollTop() >= navOffTop ) {
-						if ( !isFixed ) {
-							isFixed = true;
-							$nav.addClass('affix');
-						}
-					} else if ( isFixed ) {
-						isFixed = false;
-						$nav.removeClass('affix');
-					}
-				}
-				$win.on('scroll', menu);
-				menu();
-	
-				$nav.on('click', 'a[href^="#"]', function(e) {
-					e.preventDefault();
-					var hash = this.hash;
-					var offset = $(hash).offset().top;
-					$('body, html').animate({
-						scrollTop: offset
-					}, 600, 'easeInOutQuart', function() {
-						document.location.hash = hash;
-					});
-				});
-	
-			});
-		</script>
+    <div class="wrap">
+        <main class="main">
+            <section class="profile">
+                <article>
+                    <h1>porflie</h1>
+                    <ul>
+                        <li>생년월일&#58;1995&#44;01&#44;01</li>
+                        <li>성명&#58;김병진</li>
+                        <li>취미&#58;게임&#44;만화그리기</li>
+                        <li>자격증&#58;승강기기능사자격증</li>
+                        <li>이메일&#58;kbjgon2&#64;naver.com</li>
+                    </ul>
+                </article>
+                <article class="skill">
+                    <h2>skill</h2>
+                    <a href="#">
+                        <img src="images/HTML5_Badge_64.png" alt="html5">
+                        <img src="images/css3.svg" alt="CSS3">
+                        <img src="images/Octocat.png" alt="Github">
+                    </a>
+                </article>
+            </section>
+            <!-- //.프로필 영역 -->
+            <section class="portfolio">
+                <h2>Portfolio</h2>
+                <div class="sub">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/sub.png" alt="비지니스-서브">
+                                <p>
+                                    <strong>비지니스-서브&#58;</strong>
+                                    <span>2018.10.30 ~ 2018.11.07(AM)</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //.비지니스 -서브 영역 -->
+                <div class="bim">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/main.jpg" alt="비지니스-메인">
+                                <p>
+                                    <strong>비지니스-메인&#58;</strong>
+                                    <span>2018.10.30 ~ 2018.11.07(PM)</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //.비지니스 -메인 영역 -->
+            </section>
+            <!-- //.포토폴리오 영역(1) -->
+            <section class="pfl">
+                    <div class="suri">
+                        <ul>
+                            <li>
+                                <a herf="#">
+                                    <img src="" alt=""></ima>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //.수리 영역 -->
+                    <div class="gil">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //.초록마을 영역 -->
+            </section>
+            <!-- //.포토폴리오 영역(2) -->
+        </main>
+    </div>
+    <!-- //.전체 감싸은 영역 -->
 </body>
 </html>

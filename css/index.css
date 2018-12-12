@@ -1,23 +1,225 @@
-*{
-    margin:0;
-    padding:0;
-    
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing:border-box;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+ 본고딕: font-family: 'Noto Sans KR', sans-serif;
+나눔고딕: font-family: 'Nanum Gothic', sans-serif;
+맑은고딕: font-family: 'Malgun Gothic','맑은 고딕';
+영문웹폰트: font-family: 'Jaldi', sans-serif;
+영문웹폰트: font-family: 'Oswald', sans-serif;
+영문웹폰트: font-family: 'Lato', sans-serif;
+*/
+
+/* lyaout */
 .wrap{
-    width:100%;
-    margin:0 auto;
+	width:100%;
+	margin:0;
 }
 .headerwrap{
-    position:relative;
-    top:0;
-    left:0;
-    width:100%;
-    height:90px;
-    background:rgb(220,15,52);
-    z-index:1;
-}
-.nav{
-    display:block;
-    text-align:center;
+	position: fixed;
+	top: 0;
+	z-index: 50;
+	width:100%;
+	height:60px;
+	padding: 20px 0;
+	background-color: rgba(0, 0, 0, 0.9);
 
+}
+.header{
+	max-width:980px;
+	margin:0 auto;
+}
+.header h1{
+	margin:0 auto;
+}
+.header h1 a{
+	display: inline-block;
+	position:relative;
+	font-family: 'Jaldi', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+.header h1 a:hover {
+	color: rgba(255,255,255,1);
+}
+
+.header h1 a::after {
+	content: '';
+	display: block;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 0%;
+	border-bottom: 1px solid #fff;
+	transition: 0.4s;
+}
+
+.header h1 a:hover::after{
+	width: 100%;
+}
+
+/* main */
+.main{
+	max-width:980px;
+	margin:60px auto;
+	padding:60px 0;
+}
+.main h2{
+	max-width:600px;
+	margin:0 auto 24px;
+	font-family: 'Jaldi', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    color: #19191A;
+}
+.main h2 span{
+	color: #646466;
+    font-weight: 400;
+}
+.main .linkp{
+	max-width:600px;
+	margin:0 auto;
+}
+.sitelink{
+	position: relative;
+	font-weight: 400;
+    text-decoration: none;
+    color: #4555E6;
+    transition: color 0.3s ease;
+}
+.sitelink::after {
+	content: '';
+	display: block;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 0%;
+	border-bottom: 1px solid #4555E6;
+	transition: 0.4s ease;
+}
+.sitelink:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.sitelink:hover::after {
+	width: 100%;
+	z-index: 100;
+}
+
+.main .section{
+	margin:60px auto;
+}
+.main .article{
+	max-width:600px;
+	margin:0 auto;
+}
+.article dl{
+
+}
+.article dt{
+    display: inline-block;
+    margin-bottom: 12px;
+    margin-top: 24px;
+	font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #7D7D80;
+    text-transform: uppercase;
+}
+.article dd{
+	margin-bottom: 20px;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #19191A;
+}
+.main figure{
+	width:100%;
+}
+.main figure img{
+	max-width:100%;
+	height:auto;
+}
+.main figcaption{
+	margin:5px 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:13px;
+	text-align:center;
+}
+
+/* skill */
+.skill{
+
+}
+
+/* footer */
+.footerwrap{
+	width:100%;
+    margin-top: 0px;
+    padding: 20px 0px;
+	background-color: #19191A;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer{
+	max-width:980px;
+	margin:0 auto;
+	color: white;
+    font-size: 14px;
+    font-weight: 400;
+	letter-spacing: 0.2px;
+	text-align:center;
+    opacity: 0.5;
 }

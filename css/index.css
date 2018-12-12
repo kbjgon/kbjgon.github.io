@@ -185,22 +185,33 @@ table {
     color: #19191A;
 }
 .main figure{
-	width:100%;
+	display:block;
+	position:relative;
+	max-width:100%;
+	padding:42px 20px;
+	background:url(../images/bg.png) no-repeat 50% 0;
+	background-size:100% auto;
+	text-align:center;
 }
 .main figure img{
-	max-width:100%;
+	max-width:938px;
+	max-height:580px;
 	height:auto;
 }
 .main figcaption{
+	position:absolute;
+	bottom:13px;
+	width:100%;
 	margin:5px 0;
+	color:#fff;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-size:13px;
 	text-align:center;
 }
 
 /* skill */
-.skill{
-
+.skill h2{
+	text-align:Center;
 }
 
 /* footer */

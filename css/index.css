@@ -89,7 +89,6 @@ table {
 .header h1 a:hover {
 	color: rgba(255,255,255,1);
 }
-
 .header h1 a::after {
 	content: '';
 	display: block;
@@ -101,7 +100,6 @@ table {
 	border-bottom: 1px solid #fff;
 	transition: 0.4s;
 }
-
 .header h1 a:hover::after{
 	width: 100%;
 }

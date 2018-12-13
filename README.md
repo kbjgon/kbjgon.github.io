@@ -1,5 +1,5 @@
 # 김병진 포트폴리오
-https://github.com/kbjgon/kbjgon.github.io
+https://kbjgon.github.io
 * * *
 ## 자기소개서
 안녕하세요, 저는 김병진 입니다.제 취미는 게임 과 만화그리는 걸 취미로 하고 있습니다.

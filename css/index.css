@@ -189,7 +189,7 @@ table {
 	position:relative;
 	max-width:100%;
 	padding:42px 20px;
-	background:url(../images/bg.png) no-repeat 50% 0;
+	background:url("../images/bg.png") no-repeat 50% 0;
 	background-size:100% auto;
 	text-align:center;
 }
@@ -209,8 +209,18 @@ table {
 	text-align:center;
 }
 /* skill */
+.skill{
+	
+}
 .skill h2{
-	text-align:Center;
+	text-align:center;
+}
+.skillbox{
+	text-align:center;
+}
+.skillbox img{
+	width:15%;
+	height:auto;
 }
 /* footer */
 .footerwrap{

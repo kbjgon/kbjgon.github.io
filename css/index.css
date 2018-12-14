@@ -121,7 +121,8 @@ table {
 }
 .main h2 span{
 	color:#646466;
-    font-weight:400;
+	font-weight:400;
+	margin-left:10px;
 }
 .main .linkp{
 	max-width:600px;
@@ -223,11 +224,10 @@ table {
 .tpb{
 	float:right;
 	display:block;
-	width:50px;
-	height:50px;
+	width:0;
+	height:80px;
 	padding-right:25px;
 	background:#19191A;
-	border-radius:50%;
 }
 .tpb p{
 	text-align:center;

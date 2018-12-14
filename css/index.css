@@ -231,9 +231,9 @@ table {
 }
 .tpb p{
 	text-align:center;
-	padding-top:5px;
+	padding-top:3px;
 	padding-left:15px;
-	color:white;
+	color:#fefefe;
 	font-size:18px;
 	font-family:'Jaldi', sans-serif;
 }

@@ -103,7 +103,6 @@ table {
 .header h1 a:hover::after{
 	width:100%;
 }
-
 /* main */
 .main{
 	max-width:980px;

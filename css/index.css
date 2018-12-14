@@ -224,17 +224,17 @@ table {
 .tpb{
 	float:right;
 	display:block;
-	width:0;
-	height:80px;
+	width:51px;
+	height:25px;
 	padding-right:25px;
-	background:#19191A;
+	background:#757575;
 }
 .tpb p{
 	text-align:center;
-	padding-top:20px;
-	padding-left:10px;
+	padding-top:5px;
+	padding-left:15px;
 	color:white;
-	font-size:12px;
+	font-size:18px;
 	font-family:'Jaldi', sans-serif;
 }
 .tpb:hover{

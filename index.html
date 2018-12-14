@@ -125,35 +125,29 @@
 					<img src="images/git2-512.png" alt="깃허브">
 					<img src="images/svn-512.png" alt="svn">
 				</div>
-				<div class="tpb">
-					<a href="#"><p>Top</p></a>	
-				</div>
 				<!-- //.Skillbox-영역  -->
 			</section>
 			<!-- //.Skill-영역 -->
-			<section>
-				<h2>profile</h2>
-				<div>
-					<ul>
-						<li>김병진</li>
-						<li>생년월일:1995.01.01</li>
-						<li>취미:게임,만화그리기</li>
-						<li>이메일:kbjgon2@naver.com</li>
-						<li>자격증:승강기 기능사 자격증</li>
-					</ul>
-				</div>
+			<section class="profile">
+				<h2>profile<span></span></h2>
+				<ul>
+					<li>김병진 / 95.01.01</li>
+					<li>kbjgon2@naver.com / 010 3958 8184</li>
+					<li>자격증:승강기 기능사 자격증</li>
+				</ul>
 			</section>
 		</main>
 		<!-- //.섹션 전체감싸은 영역 -->
 		<div class="footerwrap">
-			<footer class="footer">CopyRight &copy; ByeongJin Kim. &#124;kbjgon2&#64;naver.com&#124; 010 3958 8184</footer>
+			<footer class="footer">CopyRight &copy; ByeongJin Kim.</footer>
 		</div>
 		<!-- //.푸더 전체 감싸은 영역 -->
+		<a href="#" class="sctopbtn">Top</a>
    </div>
 	<!-- //.전체감싸은영역-->
 	<script>
 	$(function() {
-		var $doc = $(document);
+		/* var $doc = $(document);
 		var $win = $(window);
 		var $nav = $('.headerwrap');
 		var navOffTop = $nav.offset().top;
@@ -182,7 +176,23 @@
 			}, 600, 'easeInOutQuart', function() {
 				document.location.hash = hash;
 			});
-		});
+		}); */
+		
+		/* scroll top button */
+		$(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('.sctopbtn').fadeIn();
+            } else {
+                $('.sctopbtn').fadeOut();
+            }
+        });
+        
+        $(".sctopbtn").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
 
 	});
 </script> 
